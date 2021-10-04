@@ -23,8 +23,33 @@ Ex.:
    nome_completo = "Joao Ferreira de Martins"
    ultimo_nome: ?
    primeiro_nome: ?
-   
-   
+ ```
+
+Ideia:
+```
+def retornar_string_em_lista(string):
+    pass
+
+```
+
+## ETAPA 02
+
+Colete o valor da versão do realease de forma automatica direto do site github.com.
+
+Para isso, use a biblioteca ***requests***
+
+```
+import requests
+
+requisicao = requests.get('https://github.com/usario/repositorio/releases/latest')
+print(requisicao.url)
+```
+
+https://github.com/pixies/verifica-lancamentos/releases/latest
+
+https://github.com/pixies/verifica-lancamentos/releases/tag/v0.1
+
+
 
 
 
