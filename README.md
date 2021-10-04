@@ -13,8 +13,8 @@ Usando o repositório "pixies/calculadora-teste" como exemplo, escreva um progra
 
 Construir um algoritmo que leia a string: "https://github.com/pixies/devinf/releases/tag/db-base-v1.1" e converte em uma lista.
 
-REPO: pixies/devinf
-VERSION: db-base-v1.1
+> REPO: pixies/devinf
+> VERSION: db-base-v1.1
 
 ***Usem Funções.*** 
 
@@ -44,18 +44,42 @@ import requests
 requisicao = requests.get('https://github.com/usario/repositorio/releases/latest')
 print(requisicao.url)
 ```
-
-https://github.com/pixies/verifica-lancamentos/releases/latest
-
-https://github.com/pixies/verifica-lancamentos/releases/tag/v0.1
+***Usem Funções***
 
 
+## Etapa 03
 
+Salvar os dados coletados.
 
+> REPO: pixies/devinf
+> VERSION: db-base-v1.1
 
+### Salvar em DataFile
 
+***Fonção Open***
+Observações:
+```
+Arquivos tem modos: 
+  - Ler (read) - r (read, realine, readlines)
+  - Escrever (writer) - w (write) - crio
+  - Adicionar (append) - a (write) - adicionando dados
+  - Binario (bin) - b 
 
-# Desafio 02
-???
-# Desafio 03
-???
+***Ler arquivo***
+> arquivo_01 = open('arquivo.txt', 'r') # retornar error
+
+***Cria novo arquivo***
+> arquivo_02 = open('arquivo02.txt', 'w')
+
+***Ler arquivo***
+> arquivo_01 = open('arquivo.txt', 'r')
+```
+1. Criem funcoes para criar arquivos.
+2. Abra o arquivo "usando a flag 'a'" para salvar no datafile os dados:
+{'REPO':'pixies/devinf','VERSION':'db-base-v1.1'}
+
+### Resumo:
+
+1. ETAPA 01 E 02 (Coletar os dados da versao do release desejado)
+2. SALVAR OS DADOS EM UM DATAFILE
+
